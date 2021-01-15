@@ -1,0 +1,31 @@
+Flask with Plotly and Pandas Part 3
+  
+  Here, the screencast video shows how to make more complex visualizations in Plotly. This example shows a line chart containing a unique line for each country in the data set.
+
+Summary Part 3
+
+  In part 3, the code iterated through the data set to create a visualization with multiple lines: one for each country.
+
+  The original code for a line chart with a single line was:
+
+    graph_one = [go.Scatter(
+      x = data[0][1],
+      y = data[0][2],
+      mode = 'lines',
+      name = country
+    )]
+
+  To make a visualization with multiple lines, graph_one will be a list of line charts. This was accomplished with the following code:
+
+    graph_one = []
+    for data_tuple in data:
+      graph_one.append(go.Scatter(
+      x = data_tuple[1],
+      y = data_tuple[2],
+      mode = 'lines',
+      name = data_tuple[0]
+    ))
+
+Next
+
+  In the last section of flask, plotly, and pandas, you'll see how to add more visualizations to the data dashboard. Then, you'll see some example code and finally you will practice using flask, plotly, and pandas together.

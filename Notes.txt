@@ -1,0 +1,96 @@
+1. Welcome to the Nanodegree program
+
+2. Introduction to Data Science
+	CRISP-DM
+	GitHub
+	Blog Post
+	Project: I made a project to predict churning customers
+
+3. Software Enginner
+	pytest
+		All files and codes (classes, modules and functions) should start with test_. 
+		After install using pip, only execute in the files directory using DOS or Shell the command pytest
+		
+	pylint
+		Help you identify points to improve e standardized the quality in your code.
+		Do pylink <file_name.py>
+		
+		
+	Virtual environments
+	
+		Linux
+			1. Instalar o pacote virtualenv
+			2. python3 -m venv <nome_da_pasta_que_sera_usada_no_ambiente_virtual>
+			3. Ativar o ambiente virtual: source <nome_da_pasta_que_sera_usada_no_ambiente_virtual>/bin/activate
+			4. Para verificar que estou no ambiente posso usar o comando: which <python_installation>. Comando prático: which python3
+			5. Para sair do ambiente virtual simplesmente digite o comando: deactivate
+			
+		Windows
+			1. Instalar o pacote virtualenv
+			2. py -m <nome_da_pasta_que_sera_usada_no_ambiente_virtual>
+			3. Ativar o ambiente virtual: .\<nome_da_pasta_que_sera_usada_no_ambiente_virtual>\Scripts\activate
+			4. Para verificar que estou no ambiente posso usar o comando: where python
+			5. Para sair do ambiente virtual simplesmente digite o comando: deactivate
+
+		Upload packages that you created
+			
+			Considerations:
+				1. In your repository you should have two files:
+					1.1. Folder that its name is the name of your package
+					1.2. File called setup.py 
+					
+							from setuptools import setup
+
+							setup(name='<name_of_your_package>',
+								  version='0.2',
+								  description='Gaussian distributions',
+								  packages=['<name_of_your_package>'],
+								  author='Henrique M. Prado',
+								  author_email='hmartins.prado@gmail.com',
+								  zip_safe=False)
+
+				2. Inside your folder metioned in 1.1 item above you should have:
+					2.1. Classe(s) .py (class_name.py)
+					2.2. README.md file
+					2.3. __init__.py
+					2.4. license.py
+					
+							Copyright 2021 Henrique M. Prado
+
+							Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+							The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+							THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+					
+					2.5. setup.cfg
+					
+							[metadata]
+							description-file = README.md
+
+			The commands to upload the package in TEST PYPI (PYTHON PACKAGE INDEX) are:
+
+				1. Inside the folder that you have the package folder and setup.py file, type:
+					python3 setup.py sdist
+				2. pip3 install twine
+				3. twine upload --repository testpypi dist/* 
+					(For more information: https://packaging.python.org/guides/using-testpypi/)
+				4. You can access yout repository in yout account inside the https://test.pypi.org/manage/projects/
+				5. Now, you can download yout package from the intenet typing:
+					pip3 install --index-url https://test.pypi.org/simple/ hmp_distributions
+					pip3 list (you'll see yout package installed)
+					
+			The commands to upload the package in PYPI (PYTHON PACKAGE INDEX) are:
+
+				1. Inside the folder that you have the package folder and setup.py file, type:
+					twine upload dist/*
+				2. You can access yout repository in yout account inside the https://pypi.org/manage/projects/
+				3. Now, you can download yout package from the intenet typing:
+					pip3 install --index-url https://test.pypi.org/simple/ hmp_distributions
+					pip3 list (you'll see yout package installed)
+					
+			As I already installed the package at the test pypi, now I will uninstall the package in my computer
+				pip3 uninstall hmp_distributions
+
+			Now, as I already installed in pypi repository (central repository to download and install packages in python), I can only install using pip:
+				pip3 install hmp_distributions
