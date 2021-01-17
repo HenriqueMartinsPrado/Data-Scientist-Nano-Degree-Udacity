@@ -1,0 +1,7 @@
+Pipelines And Feature Unions
+
+    FEATURE UNION: Feature union is a class in scikit-learn’s Pipeline module that allows us to perform steps in parallel and take the union of their results for the next step.
+
+    A pipeline performs a list of steps in a linear sequence, while a feature union performs a list of steps in parallel and then combines their results.
+    
+    In more complex workflows, multiple feature unions are often used within pipelines, and multiple pipelines are used within feature unions.
