@@ -1,12 +1,59 @@
 import sys
+import re
 
+import warnings
+warnings.filterwarnings("ignore")
 
-def load_data(database_filepath):
-    pass
+import pandas as pd
+from sqlalchemy import create_engine
 
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+nltk.download(['punkt', 'wordnet'])
+
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.multioutput import MultiOutputClassifier
+from sklearn.pipeline import Pipeline
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.metrics import classification_report, accuracy_score
+from sklearn.svm import LinearSVC
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.externals import joblib
+
+def load_data(path_db):
+    '''
+    input:
+        path_db: Path where the app can find my database
+    output:
+        X: Train messages
+        Y: Train target variable
+        category_names: Categorical name for labeling
+    '''
+    engine = create_engine('sqlite:///'+ path_db)
+    df = pd.read_sql_table('FigureEight', engine)
+    X = df.message.values
+    Y = df[df.columns[4:]].values
+    category_names = list(df.columns[4:])
+    return X, Y, category_names
 
 def tokenize(text):
-    pass
+    '''
+    input:
+        text: Message for tokenization
+    output:
+        clean_tokens: Result list after tokenization.
+    '''
+    text = re.sub(r"[^a-zA-Z0-9]", " ", text.lower())
+    tokens = word_tokenize(text)
+    lemmatizer = WordNetLemmatizer()
+
+    clean_tokens = []
+    for tok in tokens:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+    return clean_tokens
+
 
 
 def build_model():
