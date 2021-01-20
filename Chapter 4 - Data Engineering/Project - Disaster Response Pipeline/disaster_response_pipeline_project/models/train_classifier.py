@@ -54,19 +54,35 @@ def tokenize(text):
         clean_tokens.append(clean_tok)
     return clean_tokens
 
-
-
 def build_model():
-    pass
+    '''
+    input:
+        None
+    output:
+        cv: GridSearch model result.
+    '''
+    pipeline = Pipeline([
+        ('vect', CountVectorizer(tokenizer=tokenize)),
+        ('tfidf', TfidfTransformer()),
+        ('clf', MultiOutputClassifier(OneVsRestClassifier(LinearSVC(random_state = 0))))
+    ])
+    parameters = {
+                'tfidf__smooth_idf':[True, False],
+                'clf__estimator__estimator__C': [1, 2, 5]
+             }
+    cv = GridSearchCV(pipeline, param_grid=parameters, scoring='precision_samples', cv = 5)
+    return cv
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
-    pass
-
+    Y_pred = model.predict(X_test)
+    print(classification_report(Y_test, Y_pred, target_names = category_names))
+    print('---------------------------------')
+    for i in range(Y_test.shape[1]):
+        print('%25s accuracy : %.2f' %(category_names[i], accuracy_score(Y_test[:,i], Y_pred[:,i])))
 
 def save_model(model, model_filepath):
-    pass
-
+    joblib.dump(model, model_filepath)
 
 def main():
     if len(sys.argv) == 3:
@@ -74,13 +90,13 @@ def main():
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
         X, Y, category_names = load_data(database_filepath)
         X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
-        
+
         print('Building model...')
         model = build_model()
-        
+
         print('Training model...')
         model.fit(X_train, Y_train)
-        
+
         print('Evaluating model...')
         evaluate_model(model, X_test, Y_test, category_names)
 
@@ -93,7 +109,7 @@ def main():
         print('Please provide the filepath of the disaster messages database '\
               'as the first argument and the filepath of the pickle file to '\
               'save the model to as the second argument. \n\nExample: python '\
-              'train_classifier.py ../data/DisasterResponse.db classifier.pkl')
+              'train_classifier.py ../data/DisasterResponse.db hmp_ModelClassifier.pkl')
 
 
 if __name__ == '__main__':
