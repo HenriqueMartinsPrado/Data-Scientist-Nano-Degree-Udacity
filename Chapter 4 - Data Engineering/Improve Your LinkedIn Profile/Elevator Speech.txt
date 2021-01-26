@@ -1,0 +1,3 @@
+Elevator Speech
+
+Hi, I’m Chris, a Full Stack Software Engineer who loves building education products. I recently developed a web app using AngularJS that lets teachers share student writing samples anonymously. I’d love to combine my passion for learning and teaching with my software development skills to continue building personalized learning products for people.
