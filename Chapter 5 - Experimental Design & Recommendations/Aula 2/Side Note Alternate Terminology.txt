@@ -1,0 +1,5 @@
+Side Note: Alternate Terminology
+
+    You might hear other terminology for goals and evaluation metrics than those used in this course. In the social sciences, it's common to hear a "construct" as analogous to the goal or objective under investigation, and the "operational definition" as the way outcomes are measured. For example, the construct of "reaction time" could be operationally defined as "time in milliseconds to click on the correctly indicated button."
+
+    In general company operations, you might encounter the terms "key results" (KRs) or "key performance indicators" (KPIs) as ways of measuring progress against quarterly or annual "objectives." These objectives and KRs / KPIs serve a similar purpose as study goals and evaluation metrics, and might even be driving factors in the creation of an experiment.
