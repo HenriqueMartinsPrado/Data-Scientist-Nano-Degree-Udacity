@@ -1,0 +1,3 @@
+More Personalized Recommendations
+
+    In some cases, we need to be able to send recommendations without a user telling us exactly what they want or in a more personalized way than simply the top items. Imagine you want to send an email of recommendations or place recommendations within a web page (the side of a blog or as a banner advertisement); in these cases, it is often useful to implement information that we know about users or items to make these recommendations. This leads to some additional recommendation methods!
