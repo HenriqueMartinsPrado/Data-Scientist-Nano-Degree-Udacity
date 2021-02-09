@@ -1,0 +1,10 @@
+Topics
+
+    In this lesson, you will learn about three main topics:
+
+    We will look from a high level at how you might go about validating your recommendations.
+    We will look at matrix factorization as a method to use machine learning to make recommendations.
+    We will look at combining recommendation techniques to make predictions to existing and new users and for existing and new items.
+    As we go through this lesson, you will come to realize that there are a lot of difficulties in working with recommendation engines which make them still an exciting field to study! This is especially true when you combine your recommendations with a specific product type.
+
+    Recommending movies, recommending restaurants, or recommending clothing might happen in a number of different ways. However, the techniques you will learn in this lesson are often extendable to any of these cases.
