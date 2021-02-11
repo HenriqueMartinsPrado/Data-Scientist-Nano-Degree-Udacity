@@ -1,0 +1,39 @@
+Funk SVD Practice
+
+    In the notebook on the next page, you will be writing the code to implement Funk SVD. Before you dive in, let's do a practice run here.
+
+    First, consider we have a user-item matrix that looks like the matrix below, where we want to make an update of U and V matrices based on the 4 highlighted.
+
+
+    Also consider we have the following U and V matrices:
+
+
+    First, use the quiz below to identify what your current prediction would be for the 4 rating (highlighted in the first image above) based on the current values in the U and V matrices. Notice, this should be the prediction for the third user on the movie AI.
+
+    QUESTION 1 OF 2
+    The predicted value for the third user on the movie AI based on the current U and V matrices.
+
+
+
+    -1.8
+
+
+
+
+
+    Next, let's look at updating the value 0.4 as shown in the U matrix below.
+
+
+    QUESTION 2 OF 2
+    Select the formula that would be used to give the new, updated value that would replace the 0.4 value. Consider we use a learning rate of 0.01.
+
+
+
+    new_val = 0.4 + 0.01*2*(4 - 1.8)*1.2
+
+
+
+
+
+
+
