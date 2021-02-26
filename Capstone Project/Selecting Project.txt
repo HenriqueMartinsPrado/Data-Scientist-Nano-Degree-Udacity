@@ -1,0 +1,35 @@
+Selecting a Project
+	
+	Think about a technical field or domain that you are passionate about, such as robotics, virtual reality, finance, natural language processing, or even artificial intelligence (the possibilities are endless!). Then, choose an existing problem within that domain that you are interested in which you could solve by applying data science techniques. Be sure that you have collected all of the resources needed (such as a dataset) to complete this project, and make the appropriate citations wherever necessary in GitHub (and your blog, if that is the path you decide to pursue). Below are a few suggested problem areas you could explore if you are unsure what your passion is:
+
+		Robot Motion Planning
+		Healthcare
+		Computer Vision
+		Education
+		Investment and Trading
+
+	In addition, you may find a technical domain (along with the problem and dataset) in a competition on platforms such as Kaggle, or Devpost. This can be helpful for discovering a particular problem you may be interested in solving as an alternative to the suggested problem areas above. In many cases, some of the requirements for the capstone project are already defined for you when choosing from these platforms.
+
+Udacity Specific Projects
+
+	Customer Segmentation Report for Arvato Financial Services
+	(Note: High performers on this project have the opportunity to be funneled directly into the talent pipeline for Bertelsmann. Read more on the Bertelsmann / Arvato Project Overview Page following.)
+
+	Optimizing App Offers With Starbucks
+	(Note: High performers on this project have the opportunity to be funneled directly into the talent pipeline for Starbucks. Read more on the Starbuck's Project Overview page.)
+
+	Use Convolutional Neural Networks to Identify Dog Breeds
+	(If you decide to complete this project, you can find additional content to assist in the extra-curricular portion of this program).
+
+	Using Spark to Predict Churn with Insight Data Science
+	(If you decide to complete this project, you can find a series of Spark lessons in the extra-curricular portion of your classroom, as well as a Spark Project Overview and Spark Project Workspace later in this Capstone Project module.)
+
+Check out Sample Projects
+
+		Here are two projects originally created for the Machine Learning Engineer Nanodegree program, but which give you an idea of what a final blog post might look like. Each of these meets the requirements for the capstone project for the Data Scientist Nanodegree: sample project 1 and sample project 2.
+
+	It isn't necessary that your project be 10 or 20 pages. Rather, you should aim to solve a problem that interests you, build a project you are proud of, and explain your results to a technical audience. The details of how you decide to do this are largely up to you, but do use the rubric linked below to make sure your project meets specifications. This is intended to be an open-ended project that allows you to apply what you have learned to your own area of interest.
+
+	No matter what project you decide to complete, you will want to check your work against the project rubric here.
+
+;
