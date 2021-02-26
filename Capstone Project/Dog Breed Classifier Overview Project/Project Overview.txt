@@ -1,0 +1,9 @@
+Project Overview
+
+	Welcome to the dog breed classifier project. This project uses Convolutional Neural Networks (CNNs)! In this project, you will learn how to build a pipeline to process real-world, user-supplied images. Given an image of a dog, your algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed.
+
+	If you choose to complete this project, there are additional lessons in the extracurricular section of the classroom that you will likely find useful.
+
+Reminder
+
+	If you choose to complete the dog breed classifier project, you still must meet expectations for all the Rubric items associated with the Data Scientist Capstone project. That is, you still must deploy your code into an application, or you must write a post to be shared about the technical details of your analysis. The workspace on the next page walks you through one possible solution, but you are welcome to discuss other solutions that are much different.
