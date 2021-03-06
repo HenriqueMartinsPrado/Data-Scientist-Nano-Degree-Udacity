@@ -1,1 +1,11 @@
+With CPU and Memory, what else do we need?
+It seems like the right combination of CPU and memory can help you quickly load and process data. We could build a single computer with lots of CPUs and a ton of memory. The computer would be incredibly fast.
+
+What are the potential trade offs of creating one computer with a lots of CPUs and memory? Reflect on this, and then click Submit to learn more
+
+Sua reflexão
+I think that we need to think how much data I'll need to process (volume) to identify the power that I'll need in CPU, so that, we can combine the indivuals features from each aspect and also generate a good ecosystem to use.
+Para pensar
+It's true that you could build a computer with a ton of CPU and memory, which is effectively a supercomputer. However, as you'll see in the next video, this approach has its downsides.
+
 Memory (aka RAM) is known to be "efficient, expensive, and ephemeral". Operations in RAM are relatively fast compared to reading and writing from disk or moving data across a network. However, RAM is expensive, and data stored in RAM will get erased when a computer shuts down.
