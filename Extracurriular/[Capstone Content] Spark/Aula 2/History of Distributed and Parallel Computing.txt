@@ -1,0 +1,3 @@
+History of Distributed and Parallel Computing
+
+Great work! At a high level, distributed computing implies multiple CPUs each with its own memory. Parallel computing uses multiple CPUs sharing the same memory.
