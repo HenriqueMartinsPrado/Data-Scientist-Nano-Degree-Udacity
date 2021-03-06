@@ -8,4 +8,10 @@ I think that we need to think how much data I'll need to process (volume) to ide
 Para pensar
 It's true that you could build a computer with a ton of CPU and memory, which is effectively a supercomputer. However, as you'll see in the next video, this approach has its downsides.
 
+
+
+Beyond the fact that memory is expensive and ephemeral, we'll learn that for most use cases in the industry, memory and CPU aren't the bottleneck. Instead the storage and network, which you'll learn about in the next videos, slow down many tasks you'll work on in the industry.
+
+
+
 Memory (aka RAM) is known to be "efficient, expensive, and ephemeral". Operations in RAM are relatively fast compared to reading and writing from disk or moving data across a network. However, RAM is expensive, and data stored in RAM will get erased when a computer shuts down.
