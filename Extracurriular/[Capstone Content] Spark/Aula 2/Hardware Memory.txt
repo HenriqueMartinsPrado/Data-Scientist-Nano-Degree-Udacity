@@ -1,0 +1,1 @@
+Memory (aka RAM) is known to be "efficient, expensive, and ephemeral". Operations in RAM are relatively fast compared to reading and writing from disk or moving data across a network. However, RAM is expensive, and data stored in RAM will get erased when a computer shuts down.
