@@ -1,1 +1,6 @@
 Great job! Local mode is for when you use Spark on a single machine such as your own computer.
+
+The are three different cluster managers
+	Standalone
+	YARN
+	Mesos
