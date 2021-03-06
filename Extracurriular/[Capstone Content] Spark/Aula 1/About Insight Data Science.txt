@@ -1,0 +1,3 @@
+About Insight Data Science
+
+	Insight Data Science is a fellowship program for aspiring data scientists, data engineers, and data product managers. You can read more about their fellowship programs on their website www.insightdatascience.com.
