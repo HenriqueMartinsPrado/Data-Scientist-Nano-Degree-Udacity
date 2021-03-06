@@ -1,0 +1,1 @@
+That's correct! Transferring data across a network, ie between computers, is the biggest bottleneck when working with big data. One of the advantages of Spark is that it only shuffles data between computers when it absolutely has to.
