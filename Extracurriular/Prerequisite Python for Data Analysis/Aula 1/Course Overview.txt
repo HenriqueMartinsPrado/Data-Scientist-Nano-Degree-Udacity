@@ -1,0 +1,31 @@
+What's Ahead
+
+    Lesson 2: Data Types and Operators
+        Data Types: Integers, Floats, Booleans, Strings, Lists, Tuples, Sets, Dictionaries
+        Operators: Arithmetic, Assignment, Comparison, Logical, Membership, Identity
+        Built-In Functions, Compound Data Structures, Type Conversion
+        Whitespace and Style Guidelines
+
+    Lesson 3: Control Flow
+        Conditional Statements
+        Boolean Expressions
+        For and While Loops
+        Break and Continue
+        Zip and Enumerate
+        List Comprehensions
+    
+    Lesson 4: Functions
+        Defining Functions
+        Variable Scope
+        Documentation
+        Lambda Expressions
+        Iterators and Generators
+    
+    Lesson 5: Scripting
+        Python Installation and Environment Setup
+        Running and Editing Python Scripts
+        Interacting with User Input
+        Handling Exceptions
+        Reading and Writing Files
+        Importing Local, Standard, and Third-Party Modules
+        Experimenting with an Interpreter
