@@ -3,3 +3,7 @@ MapReduce is a programming technique for manipulating large data sets. "Hadoop M
 The technique works by first dividing up a large dataset and distributing the data across a cluster. In the map step, each data is analyzed and converted into a (key, value) pair. Then these key-value pairs are shuffled across the cluster so that all keys are on the same machine. In the reduce step, the values with the same keys are combined together.
 
 While Spark doesn't implement MapReduce, you can write Spark programs that behave in a similar way to the map-reduce paradigm. In the next section, you will run through a code example.
+
+
+
+That's right! In map reduce, data is organized into (key, value) pairs. The shuffle step finds all of the data across the clusters that have the same key. And all of those data points with that key are brought into the same network node for further analysis.
