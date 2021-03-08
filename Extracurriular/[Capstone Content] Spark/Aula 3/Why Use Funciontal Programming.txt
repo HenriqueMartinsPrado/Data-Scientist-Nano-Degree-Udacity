@@ -1,0 +1,3 @@
+In the video, David explains why Spark uses functional programming. He also implies that Python is not a functional programming language. How is it possible that Spark programs can be written in Python if Python is not a functional programming language? Mark all answers that are true.
+
+Yes, that's correct. The PySpark API allows you to write programs in Spark and ensures that your code uses functional programming practices. Underneath the hood, the Python code uses py4j to make calls to the Java Virtual Machine (JVM).
