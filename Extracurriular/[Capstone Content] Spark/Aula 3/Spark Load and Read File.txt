@@ -1,0 +1,7 @@
+Tip
+
+If Spark is used in a cluster mode all the worker nodes need to have access to the input data source. If you're trying to import a file saved only on the local disk of the driver node you'll receive an error message similar to this:
+
+AnalysisException: u'Path does not exist: file:/home/ubuntu/test.csv;'
+
+Loading the file should work if all the nodes have it saved under the same path.
