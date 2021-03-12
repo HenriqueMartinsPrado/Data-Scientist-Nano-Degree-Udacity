@@ -1,0 +1,5 @@
+Welcome to the Debugging and Optimization lesson!
+
+In this lesson, you will notice our Instructors primarily teaching through demos and lecture. As debugging and optimization are more conceptual, use this lesson to apply it in the more practical areas of other lessons in the Spark course.
+
+Enjoy!
