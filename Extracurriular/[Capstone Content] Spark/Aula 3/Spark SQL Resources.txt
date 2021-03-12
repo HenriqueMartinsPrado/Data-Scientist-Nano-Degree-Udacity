@@ -1,0 +1,5 @@
+Spark SQL resources
+Here are a few resources that you might find helpful when working with Spark SQL
+
+Spark SQL built-in functions
+Spark SQL guide
