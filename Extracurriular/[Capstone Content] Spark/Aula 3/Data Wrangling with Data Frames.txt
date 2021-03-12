@@ -1,0 +1,8 @@
+Correction
+You might notice in the screencast code that the SparkSession object wasn't instantiated explicitly. This is because Judit was using the same environment from a previous exercise. In general, you would have to instantiate an object using code like this:
+
+
+spark = SparkSession \
+    .builder \
+    .appName("Wrangling Data") \
+    .getOrCreate()
