@@ -1,0 +1,7 @@
+Errors in video:
+
+	AWS does not allow standalone mode: The video describes that AWS offers to run Spark on Standalone Mode at timestamp 2.50. This is inaccurate. AWS does not allow standalone mode - only YARN mode. More context is available at this AWS discussion forum post.
+
+	Cost for using AWS EMR clusters: Please note that for all nodes on the the cluster, AWS charges EMR on top of EC2 cost. The true cost of a cluster with 1 master + 2 core on m5.xlarge (which is more than sufficient for the exercises) would be around $0.75/hour. Note the cost for the EMR clusters on top of AWC EC2 (https://aws.amazon.com/emr/pricing/).
+
+	Remember: You have limited credits that should be adequate for your exercises. If you forget to shut off any connection with an AWS instance when you are not actively using the AWS instance for the exercise, you may exhaust your credits.
