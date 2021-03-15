@@ -1,0 +1,5 @@
+Further Optional Study on Log Data
+
+	For further information please see the Configuring Logging section of the Spark documentation.
+
+	https://spark.apache.org/docs/latest/configuration.html
