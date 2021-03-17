@@ -1,0 +1,4 @@
+In the screencasts of this lesson, I've loaded the data set from an S3 bucket. You have access to the same data set directly from the classroom, the bucket shown in the video is private so you won't be able to access it.
+
+The data comes from StackOverflow data dumps.
+
