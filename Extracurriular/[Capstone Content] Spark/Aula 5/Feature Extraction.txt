@@ -1,0 +1,16 @@
+You can find more information about the different scaler and indexer options through the links below.
+
+	Scalers
+
+		Normalizer
+		StandardScaler
+		MinMaxScaler
+		MaxAbsScale
+		
+	Indexers
+
+		StringIndexer
+		IndexToString
+		VectorIndexer
+
+	To learn more about text processing you can read further in the documentation.
